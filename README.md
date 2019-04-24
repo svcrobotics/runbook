@@ -16,6 +16,14 @@
 
 > <a href="https://github.com/svcrobotics/runbook/blob/master/procedures/demarrage_machines_virtuelles/projet7.md" title="projet7.md">projet7.md</a>
 
+### pour créer des sondes sous Nagios
+
+> <a href="https://github.com/svcrobotics/runbook/blob/master/procedures/creation/sonde_nagios.md" title="sonde_nagios.md">sonde_nagios.md</a>
+
+
+
+
+
 ## Troubleshooting
 
 ### machine virtuelle: svcrobotics.com

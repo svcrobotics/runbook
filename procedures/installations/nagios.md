@@ -121,9 +121,7 @@ Nagios is now running, to confirm this you need to log into the Nagios Web Inter
 
 Point your web browser to the ip address or FQDN of your Nagios Core server, for example:
 
-http://10.25.5.143/nagios
-
-http://core-013.domain.local/nagios
+http://localhost/nagios
 
 You will be prompted for a username and password. The username is nagiosadmin (you created it in a previous step) and the password is what you provided earlier.
 
@@ -178,9 +176,7 @@ make install
 
 Point your web browser to the ip address or FQDN of your Nagios Core server, for example:
 
-http://10.25.5.143/nagios
-
-http://core-013.domain.local/nagios
+http://localhost/nagios
 
 Go to a host or service object and "Re-schedule the next check" under the Commands menu. The error you previously saw should now disappear and the correct output will be shown on the screen.
 
@@ -197,7 +193,3 @@ systemctl status nagios.service
 ```
 
 
-
-```python
-
-```
