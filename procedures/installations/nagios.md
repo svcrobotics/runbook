@@ -8,7 +8,7 @@
 apt-get update
 apt-get install -y autoconf gcc libc6 make wget unzip apache2 apache2-utils php libgd-dev
 ```
- 
+
 ## Downloading the Source
 
 ```
@@ -16,7 +16,7 @@ cd /tmp
 wget -O nagioscore.tar.gz https://github.com/NagiosEnterprises/nagioscore/archive/nagios-4.4.3.tar.gz
 tar xzf nagioscore.tar.gz
 ```
- 
+
 ## Compile
 
 ```
@@ -24,7 +24,7 @@ cd /tmp/nagioscore-nagios-4.4.3/
 ./configure --with-httpd-conf=/etc/apache2/sites-enabled
 make all
 ```
- 
+
 ## Create User And Group
 
 This creates the nagios user and group. The www-data user is also added to the nagios group.
@@ -33,7 +33,7 @@ This creates the nagios user and group. The www-data user is also added to the n
 make install-groups-users
 usermod -a -G nagios www-data
 ```
- 
+
 ## Install Binaries
 
 This step installs the binary files, CGIs, and HTML files.
@@ -41,7 +41,7 @@ This step installs the binary files, CGIs, and HTML files.
 ```
 make install
 ```
- 
+
 ## Install Service / Daemon
 
 This installs the service or daemon files and also configures them to start on boot.
@@ -50,7 +50,6 @@ This installs the service or daemon files and also configures them to start on b
 make install-daemoninit
 ```
 
- 
 ## Install Command Mode
 
 This installs and configures the external command file.
@@ -58,7 +57,7 @@ This installs and configures the external command file.
 ```
 make install-commandmode
 ```
- 
+
 ## Install Configuration Files
 
 This installs the *SAMPLE* configuration files. These are required as Nagios needs some configuration files to allow it to start.
@@ -66,7 +65,7 @@ This installs the *SAMPLE* configuration files. These are required as Nagios nee
 ```
 make install-config
 ```
- 
+
 ## Install Apache Config Files
 
 This installs the Apache web server configuration files and configures the Apache settings.
@@ -76,7 +75,7 @@ make install-webconf
 a2enmod rewrite
 a2enmod cgi
 ```
- 
+
 ## Configure Firewall
 
 You need to allow port 80 inbound traffic on the local firewall so you can reach the Nagios Core web interface.
@@ -88,7 +87,6 @@ apt-get install -y iptables-persistent
 
 Answer yes to saving existing rules
 
- 
 ## Create nagiosadmin User Account
 
 You'll need to create an Apache user account to be able to log into Nagios.
@@ -98,10 +96,10 @@ The following command will create a user account called nagiosadmin and you will
 ```
 htpasswd -c /usr/local/nagios/etc/htpasswd.users nagiosadmin
 ```
- 
+
 When adding additional users in the future, you need to remove -c from the above command otherwise it will replace the existing nagiosadmin user (and any other users you may have added).
 
- 
+
 ## Start Apache Web Server
 
 
@@ -110,13 +108,13 @@ Need to restart it because it is already running.
 ```
 systemctl restart apache2.service
 ```
- 
+
 ## Start Service / Daemon
 
 ```
 systemctl start nagios.service
 ```
- 
+
 ## Test Nagios
 
 Nagios is now running, to confirm this you need to log into the Nagios Web Interface.
@@ -138,7 +136,7 @@ Currently you have only installed the Nagios Core engine. You'll notice some err
 
 These errors will be resolved once you install the Nagios Plugins, which is covered in the next step.
 
- 
+
 # Installing The Nagios Plugins
 
 Nagios Core needs plugins to operate properly. The following steps will walk you through installing Nagios Plugins.
@@ -149,7 +147,7 @@ Please note that the following steps install most of the plugins that come in th
 
 Documentation - Installing Nagios Plugins From Source
 
- 
+
 ## Prerequisites
 
 Make sure that you have the following packages installed.
@@ -157,7 +155,7 @@ Make sure that you have the following packages installed.
 ```
 apt-get install -y autoconf gcc libc6 libmcrypt-dev make libssl-dev wget bc gawk dc build-essential snmp libnet-snmp-perl gettext
 ```
- 
+
 ## Downloading The Source
 
 ```
@@ -165,7 +163,7 @@ cd /tmp
 wget --no-check-certificate -O nagios-plugins.tar.gz https://github.com/nagios-plugins/nagios-plugins/archive/release-2.2.1.tar.gz
 tar zxf nagios-plugins.tar.gz
 ```
- 
+
 ## Compile + Install
 
 ```
@@ -175,7 +173,7 @@ cd /tmp/nagios-plugins-release-2.2.1/
 make
 make install
 ```
- 
+
 ## Test Plugins
 
 Point your web browser to the ip address or FQDN of your Nagios Core server, for example:
@@ -186,7 +184,7 @@ http://core-013.domain.local/nagios
 
 Go to a host or service object and "Re-schedule the next check" under the Commands menu. The error you previously saw should now disappear and the correct output will be shown on the screen.
 
- 
+
 ## Service / Daemon Commands
 
 Different Linux distributions have different methods of starting / stopping / restarting / status Nagios.

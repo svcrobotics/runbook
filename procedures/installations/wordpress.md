@@ -7,7 +7,7 @@ apt update
 apt install wordpress curl apache2 mariadb-server
 ```
 
-### Secure your MySQL installation with this command 
+### Secure your MySQL installation with this command
 
 ```
 root@kali:~# mysql_secure_installation
@@ -209,7 +209,3 @@ cat ~/wp.sql | mysql --defaults-extra-file=/etc/mysql/debian.cnf
 Navigate to the wordpress directory in browser e.g.:- `http://svcrobotics.com/wp` which redirects to `http://svcrobotics.com/wp/wp-admin/install.php` where you'll see the "classic" wordpress 5 minute install page (actually a 5 second install thanks to the Debian packaging) 
 
 
-
-```python
-
-```

@@ -34,15 +34,15 @@
 
 ### Python
 
-    Afin de réagir en cas de campagne de SPAM sur les commentaires de votre site web, mettez en place une sonde permettant de remonter une alerte "warning" dès que 4 commentaires ou plus ont été postés dans les 4 dernières heures, une alerte "critical" dès que 10 commentaires ou plus ont été postés dans les 4 dernières heures.
+> Afin de réagir en cas de campagne de SPAM sur les commentaires de votre site web, mettez en place une sonde permettant de remonter une alerte "warning" dès que 4 commentaires ou plus ont été postés dans les 4 dernières heures, une alerte "critical" dès que 10 commentaires ou plus ont été postés dans les 4 dernières heures.
 
 <a href="https://github.com/svcrobotics/nagios-spam" title="nagios-spam">https://github.com/svcrobotics/nagios-spam</a>
 
 ### Bash
-
 
 ## Documents
 
 ## TODO
 
 <a href="https://github.com/svcrobotics/runbook/blob/master/todo/todo.md" title="todo.md">todo.md</a>
+

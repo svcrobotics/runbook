@@ -3,9 +3,8 @@
 
 
 
-
-```python
-!df -h
+```
+df -h
 ```
 
     Sys. de fichiers Taille Utilisé Dispo Uti% Monté sur
@@ -20,18 +19,17 @@
 
 
 
-```python
-!ps aux
+```
+ps aux
+```
+
+```
+top
 ```
 
 
-```python
-!top
 ```
-
-
-```python
-!who
+who
 ```
 
     root     :1           2019-04-23 21:14 (:1)
