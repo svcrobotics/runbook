@@ -8,7 +8,7 @@
 
 <a href="https://github.com/svcrobotics/runbook/blob/master/procedures/installations/nagios.md" title="nagios.md">nagios.md</a>
 
-<a href="https://github.com/svcrobotics/runbook/blob/master/procedures/installations/rsyslog.ipynb" title="rsyslog.ipynb">rsyslog.ipynb</a>
+<a href="https://github.com/svcrobotics/runbook/blob/master/procedures/installations/rsyslog.md" title="rsyslog.md">rsyslog.md</a>
 
 ### Démarrage des machines virtueles
 
