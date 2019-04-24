@@ -1,5 +1,4 @@
-
-## runbook/troubleshooting/wordpress_is_down.md
+# Procédure 
 
 Si la sonde **PING WordPress Server** affiche:
 
@@ -37,8 +36,6 @@ lo: flags=73<UP,LOOPBACK,RUNNING>  mtu 65536
 
 
 ```bash
-%%bash
-
 cat /etc/hosts
 ```
 
@@ -56,8 +53,6 @@ Après modification:
 
 
 ```bash
-%%bash
-
 cat /etc/hosts
 ```
 
@@ -75,8 +70,6 @@ Redémarrer le serveur Nagios
 
 
 ```bash
-%%bash
-
 systemctl restart nagios.service
 ```
 
@@ -85,3 +78,4 @@ Problème résolu si Nagios affiche
 ```
 PING OK - Paquets perdus = 0%, RTA = 1.54 ms
 ```
+
