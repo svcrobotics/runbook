@@ -1,5 +1,7 @@
 # Runbook
 
+https://fr.wikipedia.org/wiki/Runbook
+
 ## OVERVIEW (vue d'ensemble)
 
 > Vue d'ensemble du service: qu'est-ce que c'est, pourquoi l'avons-nous, qui sont les contacts principaux, comment signaler les bogues, les liens vers les documents de conception et autres informations pertinentes.

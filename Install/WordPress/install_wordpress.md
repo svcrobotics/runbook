@@ -1,15 +1,14 @@
-
 # Installer WordPress sur une Kali Linux
 
 
-```
+```bash
 apt update
 apt install wordpress curl apache2 mariadb-server
 ```
 
 ### Secure your MySQL installation with this command
 
-```
+```bash
 root@kali:~# mysql_secure_installation
 
 NOTE: RUNNING ALL PARTS OF THIS SCRIPT IS RECOMMENDED FOR ALL MariaDB
