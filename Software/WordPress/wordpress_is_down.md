@@ -1,6 +1,6 @@
-# Procédure 
+# Procédure au cas ou
 
-Si la sonde **PING WordPress Server** affiche:
+la sonde **PING WordPress Server** affiche:
 
 ```
 CRITICAL - Plugin timed out

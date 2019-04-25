@@ -1,4 +1,4 @@
-# RSYSLOG
+# RSYSLOG CONFIG
 
 ## Côté Client (svcrobotics.com)
 
